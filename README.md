@@ -1,5 +1,13 @@
 Plan goes here
 
+explain
+	- arduino
+	- breadboard
+	- code
+	- circuits
+show process of building the circuit, and project
+showcase the final product
+
 
 eric was here
 
