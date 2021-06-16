@@ -19,7 +19,7 @@ void setup() {
 void loop() {
   switchState = digitalRead(switchPin);
   if(switchState != prevSwitchState && switchState == LOW){
-    reply = random(8);
+    reply = random(17);
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("The ball says: ");
@@ -29,19 +29,19 @@ void loop() {
       lcd.print("It is certain.");
       break;
       case 1:
-      lcd.print("It is decidedly so.");
+      lcd.print("For sure");
       break;
       case 2:
-      lcd.print("Without a doubt.");
+      lcd.print("No doubt.");
       break;
       case 3:
-      lcd.print("Yes - definitely.");
+      lcd.print("Definitely.");
       break;
       case 4:
-      lcd.print("You may rely on it.");
+      lcd.print("Perhaps.");
       break;
       case 5:
-      lcd.print("As I see it, yes.");
+      lcd.print("Maybe.");
       break;
       case 6:
       lcd.print("Most likely.");
@@ -53,37 +53,28 @@ void loop() {
       lcd.print("Yes.");
       break;
       case 9:
-      lcd.print("Signs point to yes.");
+      lcd.print("Probably");
       break;
       case 10:
-      lcd.print("Reply hazy, try again.");
+      lcd.print("Not sure");
       break;
       case 11:
-      lcd.print("Ask again later.");
+      lcd.print("Try again.");
       break;
       case 12:
-      lcd.print("Better not tell you now.");
+      lcd.print("Can't tell");
       break;
       case 13:
-      lcd.print("Cannot predict now.");
+      lcd.print("Unpredictable.");
       break;
       case 14:
-      lcd.print("Concentrate and ask again.");
+      lcd.print("Ask again.");
       break;
       case 15:
-      lcd.print("Don't count on it.");
+      lcd.print("Probably not.");
       break;
       case 16:
-      lcd.print("My reply is no.");
-      break;
-      case 17:
-      lcd.print("My sources say no.");
-      break;
-      case 18:
-      lcd.print("Outlook not so good.");
-      break;
-      case 19:
-      lcd.print("Very doubtful.");
+      lcd.print("No.");
       break;
     }
   }
